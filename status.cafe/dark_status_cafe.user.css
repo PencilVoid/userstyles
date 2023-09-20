@@ -5,6 +5,7 @@
 @description    A darker theme for status.cafe and forum.status.cafe. Doesn't affect user pages.
 @author         pencilvoid
 ==/UserStyle== */
+
 @-moz-document regexp("^https:\\/\\/(?:status|forum\\.status)\\.cafe\\/(?!users).*") {
 	body {
 		background-color: Black;

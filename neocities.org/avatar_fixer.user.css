@@ -5,6 +5,7 @@
 @description    Makes avatar display on the feed less weird
 @author         pencilvoid
 ==/UserStyle== */
+
 @-moz-document url-prefix("https://neocities.org/") {
 	.news-item .icon {
 		width: 37px;

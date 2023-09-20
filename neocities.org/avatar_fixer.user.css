@@ -1,0 +1,26 @@
+/* ==UserStyle==
+@name           Neocities Avatar Fixer
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Makes avatar display on the feed less weird
+@author         pencilvoid
+==/UserStyle== */
+@-moz-document url-prefix("https://neocities.org/") {
+	.news-item .icon {
+		width: 37px;
+		height: 37px;
+		padding: 0;
+	}
+	.news-item .avatar {
+		height: 37px;
+		width: 37px;
+		margin: 0 4px 4px 0;
+	}
+	.news-item > .content:nth-child(2) {
+		margin-left: 50px;
+	}
+
+	.news-item > .content > .comments > .comment .avatar {
+		margin-right: 12px;
+	}
+}

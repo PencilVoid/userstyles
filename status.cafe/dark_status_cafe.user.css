@@ -1,0 +1,91 @@
+/* ==UserStyle==
+@name           Dark status.cafe
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A darker theme for status.cafe and forum.status.cafe. Doesn't affect user pages.
+@author         pencilvoid
+==/UserStyle== */
+@-moz-document regexp("^https:\\/\\/(?:status|forum\\.status)\\.cafe\\/(?!users).*") {
+	body {
+		background-color: Black;
+		color: LightSteelBlue;
+	}
+	.flash {
+		background-color: SeaGreen;
+		color: LightCyan;
+	}
+	a:link {
+		color: Aquamarine;
+	}
+	/* visited link */
+	a:visited {
+		color: MediumAquamarine;
+	}
+	/* mouse over link */
+	a:hover {
+		color: LightCyan;
+	}
+	/* selected link */
+	a:active {
+		color: Azure;
+	}
+	/* Lists ************************************************************/
+	.errors {
+		background-color: DarkRed;
+		color: LightSalmon;
+	}
+	.info {
+		background-color: DarkGreen;
+		color: FloralWhite;
+	}
+	/* Posts ************************************************************/
+	.topic > tbody > tr:nth-child(2n) {
+		background-color: hsla(248, 39%, 39%, .25);
+	}
+	.signature {
+		border-top: 1px solid gray;
+	}
+	table.post {
+		background-color: Black;
+	}
+	table.post .header {
+		background-color: Indigo;
+	}
+	article {
+		background-color: Black;
+	}
+	article > header {
+		background-color: Indigo;
+	}
+	.forum {
+		background-color: MidnightBlue;
+	}
+	/* Start post */
+	/* With a table */
+	.post-aside {
+		background-color: Indigo;
+	}
+	thead {
+		background-color: Indigo;
+	}
+	tbody {
+		background-color: Black;
+	}
+	/* Misc *************************************************************/
+	blockquote {
+		color: green;
+	}
+	hr {
+		background-color: grey;
+	}
+	.small {
+		color: grey;
+	}
+	thead {
+		background-color: DarkSlateBlue;
+		color: white;
+	}
+	table, th, td {
+		border: 1px solid DarkSlateBlue;
+	}
+}

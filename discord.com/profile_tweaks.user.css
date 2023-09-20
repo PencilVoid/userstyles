@@ -1,0 +1,20 @@
+/* ==UserStyle==
+@name           Discord Profile Tweaks
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Adds an @ symbol before usernames using the new username system, adds a tag icon before the profile field
+@author         pencilvoid
+==/UserStyle== */
+
+@-moz-document domain("discord.com") {
+	span[class^="userTagUsernameBase"]::before,
+	span[class^="discriminator"]:not(span[class^="username"] ~ span[class^="discriminator"])::before,
+	div[class*="alignPomelo"] span[class*="infoSpacing"][class*="discriminator"]::before {
+		content: "@";
+		opacity: 0.625;
+	}
+	div[class*="pronouns"]::before {
+		content: "🏷️ ";
+		opacity: 0.625;
+	}
+}

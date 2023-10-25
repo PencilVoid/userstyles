@@ -1,0 +1,39 @@
+/* ==UserStyle==
+@name           Dark SemVer
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Dark theme for semver.org
+@author         pencilvoid
+==/UserStyle== */
+
+@-moz-document domain("semver.org") {
+	body {
+		color: #eee;
+		background-color: #333;
+	}
+
+	a {
+		color: #28f;
+	}
+
+	a:hover,
+	a:focus {
+		color: #9cf;
+	}
+
+	ul.nav {
+		background-color: #333;
+	}
+
+	ul.nav li a {
+		color: #eee;
+	}
+
+	ul.lang {
+		background-color: #ccc;
+	}
+
+	ul.lang li a {
+		color: #333;
+	}
+}
